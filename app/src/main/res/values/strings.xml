@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RetrofitDemo</string>
+    <string-array name="retrofitnames">
+        <item>1.固定查询参数(GET)</item>
+        <item>2.动态参数(GET)</item>
+        <item>3.多动态参数(MAP)(GET)</item>
+        <item>4.路径请求替换(GET)</item>
+        <item>5.Post请求@Field</item>
+        <item>6.Post请求(多参数@FieldMap)</item>
+        <item>7.固定头</item>
+        <item>8.动态头</item>
+        <item>9.固定+动态头</item>
+        <item>10.Post请求，无Body</item>
+        <item>11.Post请求有Body</item>
+        <item>12.表单编码字段</item>
+        <item>13.表单编码字段（Map）</item>
+        <item>14.动态Url(Dynamic URL parameter)</item>
+        <item>15.可插拔的执行机制(Multiple, pluggable execution mechanisms)</item>
+    </string-array>
+
+</resources>

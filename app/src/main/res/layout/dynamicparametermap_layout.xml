@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="查询历史上的今天"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/edit_month"
+        android:layout_gravity="center_horizontal"
+        android:hint="请输入月份 如8月，输入8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edit_day"
+        android:layout_gravity="center_horizontal"
+        android:hint="请输入日期 如8号，输入8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_search"
+        android:text="查询"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lv_today_history"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
