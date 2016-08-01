@@ -35,7 +35,9 @@ import retrofit.http.QueryMap;
  */
 public interface RetrofitService {
 
-    //固定参数(获取电视节目)
+    /**
+     * 固定参数(获取电视节目)
+     */
     @GET("/tv/getCategory?key=b8f4231c7946cd98b9779ffada5c6361")
     Call<TVShow> TVShow();
 
@@ -56,7 +58,7 @@ public interface RetrofitService {
 
     /**
     多动态参数(测试QQ号吉凶)  QueryMap相当于多个Query
-     http://api.juheapi.com/japi/toh?key=b6c19a3e19888cd1ed481247f2c8a3f7&v=1.0&key=value
+     http://api.juheapi.com/japi/toh?key=b6c19a3e19888cd1ed481247f2c8a3f7&v=1.0&key=value&month=8&day=1
      */
     @GET("/japi/toh?key=b6c19a3e19888cd1ed481247f2c8a3f7&v=1.0")
     Call<TodayHistory> getTodayHistory(@QueryMap Map<String, String> MapPar);

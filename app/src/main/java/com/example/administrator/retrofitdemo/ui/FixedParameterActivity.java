@@ -44,7 +44,9 @@ public class FixedParameterActivity extends BaseActivity {
 
     public void getTvShow() {
         startLoading();
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(LocalConfig.BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(LocalConfig.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
         RetrofitService service = retrofit.create(RetrofitService.class);
         Call<TVShow> call = service.TVShow();
         call.enqueue(new Callback<TVShow>() {
